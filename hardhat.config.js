@@ -7,5 +7,13 @@ require("./tasks/faucet");
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.17",
+  solidity: "0.8.20",
+  allowUnlimitedContractSize: true,
+  gasPrice: 20000000000,
+  gas: 6000000,
+  networks: {
+    hardhat: {
+      allowUnlimitedContractSize: true,
+    },
+  }
 };
